@@ -1,3 +1,3 @@
 class Patient < ApplicationRecord
-  belongs_to :Vaccinator
+  belongs_to :vaccinator
 end

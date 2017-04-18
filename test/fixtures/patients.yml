@@ -3,7 +3,7 @@
 one:
   first_name: MyString
   surname: MyString
-  dob: 2017-04-13
+  dob: 2017-04-18
   photo: 
   gender: false
   address1: MyString
@@ -11,12 +11,12 @@ one:
   post_code: 1
   state: MyString
   country: MyString
-  Vaccinator: one
+  vaccinator: one
 
 two:
   first_name: MyString
   surname: MyString
-  dob: 2017-04-13
+  dob: 2017-04-18
   photo: 
   gender: false
   address1: MyString
@@ -24,4 +24,4 @@ two:
   post_code: 1
   state: MyString
   country: MyString
-  Vaccinator: two
+  vaccinator: two

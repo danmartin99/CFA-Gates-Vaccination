@@ -69,6 +69,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:vacc_type, :start_date, :end_date, :batch_number, :Vaccinator_id)
+      params.require(:project).permit(:vacc_type, :start_date, :end_date, :batch_number, :vaccinator_id)
     end
 end

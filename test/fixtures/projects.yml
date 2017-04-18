@@ -2,14 +2,14 @@
 
 one:
   vacc_type: MyString
-  start_date: 2017-04-13
-  end_date: 2017-04-13
+  start_date: 2017-04-18
+  end_date: 2017-04-18
   batch_number: 1
-  Vaccinator: one
+  vaccinator: one
 
 two:
   vacc_type: MyString
-  start_date: 2017-04-13
-  end_date: 2017-04-13
+  start_date: 2017-04-18
+  end_date: 2017-04-18
   batch_number: 1
-  Vaccinator: two
+  vaccinator: two

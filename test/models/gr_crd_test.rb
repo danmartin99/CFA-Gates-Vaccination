@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GrantCoordTest < ActiveSupport::TestCase
+class GrCrdTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

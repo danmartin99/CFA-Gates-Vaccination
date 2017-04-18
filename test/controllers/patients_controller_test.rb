@@ -17,7 +17,7 @@ class PatientsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create patient" do
     assert_difference('Patient.count') do
-      post patients_url, params: { patient: { Vaccinator_id: @patient.Vaccinator_id, address1: @patient.address1, address2: @patient.address2, country: @patient.country, dob: @patient.dob, first_name: @patient.first_name, gender: @patient.gender, photo: @patient.photo, post_code: @patient.post_code, state: @patient.state, surname: @patient.surname } }
+      post patients_url, params: { patient: { address1: @patient.address1, address2: @patient.address2, country: @patient.country, dob: @patient.dob, first_name: @patient.first_name, gender: @patient.gender, photo: @patient.photo, post_code: @patient.post_code, state: @patient.state, surname: @patient.surname, vaccinator_id: @patient.vaccinator_id } }
     end
 
     assert_redirected_to patient_url(Patient.last)
@@ -34,7 +34,7 @@ class PatientsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update patient" do
-    patch patient_url(@patient), params: { patient: { Vaccinator_id: @patient.Vaccinator_id, address1: @patient.address1, address2: @patient.address2, country: @patient.country, dob: @patient.dob, first_name: @patient.first_name, gender: @patient.gender, photo: @patient.photo, post_code: @patient.post_code, state: @patient.state, surname: @patient.surname } }
+    patch patient_url(@patient), params: { patient: { address1: @patient.address1, address2: @patient.address2, country: @patient.country, dob: @patient.dob, first_name: @patient.first_name, gender: @patient.gender, photo: @patient.photo, post_code: @patient.post_code, state: @patient.state, surname: @patient.surname, vaccinator_id: @patient.vaccinator_id } }
     assert_redirected_to patient_url(@patient)
   end
 

@@ -17,7 +17,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create project" do
     assert_difference('Project.count') do
-      post projects_url, params: { project: { Vaccinator_id: @project.Vaccinator_id, batch_number: @project.batch_number, end_date: @project.end_date, start_date: @project.start_date, vacc_type: @project.vacc_type } }
+      post projects_url, params: { project: { batch_number: @project.batch_number, end_date: @project.end_date, start_date: @project.start_date, vacc_type: @project.vacc_type, vaccinator_id: @project.vaccinator_id } }
     end
 
     assert_redirected_to project_url(Project.last)
@@ -34,7 +34,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update project" do
-    patch project_url(@project), params: { project: { Vaccinator_id: @project.Vaccinator_id, batch_number: @project.batch_number, end_date: @project.end_date, start_date: @project.start_date, vacc_type: @project.vacc_type } }
+    patch project_url(@project), params: { project: { batch_number: @project.batch_number, end_date: @project.end_date, start_date: @project.start_date, vacc_type: @project.vacc_type, vaccinator_id: @project.vaccinator_id } }
     assert_redirected_to project_url(@project)
   end
 
